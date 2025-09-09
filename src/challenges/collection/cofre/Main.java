@@ -1,4 +1,4 @@
-package challenges.cofre;
+package challenges.collection.cofre;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

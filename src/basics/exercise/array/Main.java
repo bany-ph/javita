@@ -13,7 +13,7 @@ public class Main {
         }
 
         // user enter the numbers
-        int[] userNumbers = new int[3];
+        int[] userNumbers = new int[6];
         for (int i = 0; i < userNumbers.length; i++) {
             userNumbers[i] = sc.nextInt();
         }

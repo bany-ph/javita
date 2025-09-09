@@ -1,7 +1,6 @@
-package challenges.cofre;
+package challenges.collection.cofre;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class Cofre {
     int[] items = {3,4,5,6,7};
