@@ -1,8 +1,5 @@
 package challenges.loop.vocal;
 
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Main {
@@ -14,7 +11,7 @@ public class Main {
          * */
         Scanner sc = new Scanner(System.in);
         String VOWELS = "aeiou";
-        String input = sc.next(); // only read until the first space compared to nextLine() which reads until the end of the line
+        String input = sc.next().toLowerCase(); // only read until the first space compared to nextLine() which reads until the end of the line
 
         String result = (input.matches(String.format("[%s]+", VOWELS))) ? "VOCAL" : "NO VOCAL";
         System.out.println(result);
