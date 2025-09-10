@@ -1,4 +1,4 @@
-package challenges.collection.tesoro;
+package challenges.day2.collection.tesoro;
 
 public class Main {
     public static void main(String[] args) {

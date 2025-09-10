@@ -1,4 +1,4 @@
-package challenges.loop.factorial;
+package challenges.day2.loop.factorial;
 
 import java.util.Scanner;
 

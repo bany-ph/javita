@@ -1,4 +1,4 @@
-package challenges.collection.mochila;
+package challenges.day2.collection.mochila;
 
 public class Main {
     public static void main(String[] args) {

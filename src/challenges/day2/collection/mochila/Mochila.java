@@ -1,4 +1,4 @@
-package challenges.collection.mochila;
+package challenges.day2.collection.mochila;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package challenges.collection.tesoro;
+package challenges.day2.collection.tesoro;
 
 import java.util.HashMap;
 

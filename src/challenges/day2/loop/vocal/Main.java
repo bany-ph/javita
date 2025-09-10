@@ -1,4 +1,4 @@
-package challenges.loop.vocal;
+package challenges.day2.loop.vocal;
 
 import java.util.Scanner;
 
