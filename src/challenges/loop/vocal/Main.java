@@ -1,5 +1,8 @@
 package challenges.loop.vocal;
 
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Main {
@@ -9,25 +12,13 @@ public class Main {
          * Algoritmo que pida caracteres e imprima ‘VOCAL’ si son vocales y ‘NO VOCAL’ en caso contrario,
          *  el programa termina cuando se introduce un espacio
          * */
-
         Scanner sc = new Scanner(System.in);
-        StringBuilder letters = new StringBuilder();
         String VOWELS = "aeiou";
+        String input = sc.next(); // only read until the first space compared to nextLine() which reads until the end of the line
 
-        while(true){
+        String result = (input.matches(String.format("[%s]+", VOWELS))) ? "VOCAL" : "NO VOCAL";
+        System.out.println(result);
 
-            letters.append(sc.next());
-            if(letters.toString().charAt(letters.length() - 1) == ' '){
-                break;
-            }
-        }
-
-      //  int random = (int) (Math.random() * (100 - 1 + 1)) + 1;
-        //System.out.println(letters);
-        String res = " ";
-        for (int i = 0; i < letters.length() ; i++) {
-            res = (VOWELS.indexOf(letters.charAt(i)) != -1) ? "VOWELS" : "NO VOWELS" ;
-        }
-        System.out.println(res);
+        // regex ('["aeiou"]+' ) -> one or more repetitions of the characters in the string
     }
 }
