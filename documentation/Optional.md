@@ -1,5 +1,16 @@
 # Optionals in java
 
+## Sources
+[Optionals Java Platform](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html)
+
+[Guide To Java Optional](https://www.baeldung.com/java-optional)
+
+[Optionals geekforgeeks](https://www.geeksforgeeks.org/java/java-8-optional-class/)  
+ 
+
+---
+
+
 The `Optional<T>` class was introduced in Java 8 as part of the `java.util` package.
 It represents a container object that may or may not contain a non-null value. 
 Optional is designed to help eliminate `NullPointerException` and 
