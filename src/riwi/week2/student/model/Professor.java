@@ -6,7 +6,9 @@ public class Professor extends Person {
         super(name, age);
     }
 
-
-
+    @Override
+    public String getInformation() {
+        return "PROFESSOR ↓ \nName: " + getName() + "\nAge: " + getAge();
+    }
 
 }

@@ -1,13 +1,17 @@
 package riwi.week2.student.model;
 
-public class Course {
-     
-    private String courseName;
-    private int grade;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Course(String courseName, int grade) {
+public class Course {
+    private static List<Enrollment> enrollments = new ArrayList<>();
+    private String courseName;
+    private Professor professor;
+
+    public Course(String courseName, Professor professor) {
         this.courseName = courseName;
-        this.grade = grade;
+        this.professor = professor;
+
     }
 
     public String getCourseName() {
@@ -18,26 +22,20 @@ public class Course {
         this.courseName = courseName;
     }
 
-    public int getGrade() {
-        return grade;
+    public Professor getProfessor() {
+        return professor;
     }
 
-    public void setGrade(int grade) {
-        if(grade < 0){
-            throw new IllegalArgumentException();
-        }
-        this.grade = grade;
-    }
-
-    public String status(){
-        return getGrade() > 3.5 ? "APROBADO" : "REPROBADO";
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
     }
 
     @Override
     public String toString() {
         return "Course{" +
-                "courseName='" + courseName + '\'' +
-                ", grade=" + grade +
+                "enrollments=" + enrollments +
+                ", courseName='" + courseName + '\'' +
+                ", professor=" + professor +
                 '}';
     }
 }
