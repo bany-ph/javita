@@ -1,6 +1,6 @@
 package riwi.week2.student;
 
-import riwi.week2.student.model.Student;
+import riwi.week2.student.model.Enrollment;
 import riwi.week2.student.service.CourseService;
 import riwi.week2.student.service.EnrollmentService;
 import riwi.week2.student.service.ProfessorService;
@@ -31,7 +31,17 @@ public class Main {
 
 
         //get students by course
-        List<Student> studentsEnglish = enrollmentService.getStudentsByCourse("English");
-        studentsEnglish.forEach(student -> System.out.println(student.getInformation()));
+        List<Enrollment> studentsEnglish = enrollmentService.getEnrollmentsByCourse("English");
+
+        //add grade
+        enrollmentService.addGradeToStudent(50,"Bany","English");
+        enrollmentService.addGradeToStudent(70,"Bany","English");
+
+        studentsEnglish.forEach(enrollment -> System.out.printf("""
+                Student name: %s
+                Grades: %s
+                """,enrollment.getStudent().getName(),String.join(",", String.valueOf(enrollment.getGrades()))));
+
+
     }
 }

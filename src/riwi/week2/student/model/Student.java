@@ -9,7 +9,7 @@ public class Student extends Person{
 
     @Override
     public String getInformation() {
-        return "STUDENT ↓ \nName: " + getName() + "\nAge: " + getAge();
+        return "\nID:" + getId()+ "\nName: " + getName() + "\nAge: " + getAge();
     }
 
 

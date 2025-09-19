@@ -1,12 +1,20 @@
 package riwi.week2.student.model;
 
 public abstract class Person {
+    private static int nextId = 1;
+    private final int id;
     private String name;
     private int age;
 
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+        this.id = nextId;
+        nextId++;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {

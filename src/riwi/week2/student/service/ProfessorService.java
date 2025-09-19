@@ -14,9 +14,7 @@ public class ProfessorService {
     public void addNewProfessor(String professorName, int age ){
           professors.add(new Professor(professorName,age));
     }
-    public void deleteProfessor(String professorName){
-
-    }
+    public void deleteProfessor(String professorName){}
 
     public List<Professor> getAllProfessor(){
         return  professors;

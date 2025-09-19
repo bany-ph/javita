@@ -1,10 +1,8 @@
 package riwi.week2.student.model;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Course {
-    private static List<Enrollment> enrollments = new ArrayList<>();
     private String courseName;
     private Professor professor;
 
@@ -33,7 +31,6 @@ public class Course {
     @Override
     public String toString() {
         return "Course{" +
-                "enrollments=" + enrollments +
                 ", courseName='" + courseName + '\'' +
                 ", professor=" + professor +
                 '}';
